@@ -1,0 +1,11 @@
+{
+  "name": "d-webpack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/dguoqing/d-webpack.git",
+  "author": "guoqing.dong <878744510@qq.com>",
+  "license": "MIT",
+  "bin": {
+    "d-webpack": "./bin/d-webpack.js"
+  }
+}
