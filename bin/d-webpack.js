@@ -15,4 +15,4 @@ const compiler = new Compiler(config);
 
 //3、开始编译
 compiler.run();
-console.log("测试d-webpack", process.cwd());
+// console.log("测试d-webpack", process.cwd());
