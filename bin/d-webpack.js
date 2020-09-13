@@ -12,7 +12,7 @@ const config = require(path.resolve("webpack.config.js"));
 
 //2、实例化编译对象
 const compiler = new Compiler(config);
-
+compiler.hooks.entryOption.call();
 //3、开始编译
 compiler.run();
 // console.log("测试d-webpack", process.cwd());
