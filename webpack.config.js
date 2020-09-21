@@ -8,9 +8,10 @@ module.exports = {
 		path: path.resolve(__dirname, "dist"),
 	},
 	resolveLoader: {
-		alias: {
-			"loader-demo": path.resolve(__dirname, "loaders", "loader-demo"),
-		},
+		// alias: {
+		// 	"loader-demo": path.resolve(__dirname, "loaders", "loader-demo"),
+		// },
+		modules: ["node_modules", path.resolve(__dirname, "loaders")],
 	},
 	module: {
 		rules: [
@@ -19,8 +20,11 @@ module.exports = {
 				use: [
 					{
 						loader: "loader-demo",
+					},
+					{
+						loader: "babel-loader",
 						options: {
-							preset: ["@babel/preset-env"],
+							presets: ["@babel/preset-env"],
 						},
 					},
 				],
