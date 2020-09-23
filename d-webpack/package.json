@@ -1,0 +1,19 @@
+{
+  "name": "d-webpack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/dguoqing/d-webpack.git",
+  "author": "guoqing.dong <878744510@qq.com>",
+  "license": "MIT",
+  "bin": {
+    "d-webpack": "./bin/d-webpack.js"
+  },
+  "devDependencies": {
+    "@babel/generator": "^7.11.6",
+    "@babel/traverse": "^7.11.5",
+    "@babel/types": "^7.11.5",
+    "babylon": "^6.18.0",
+    "ejs": "^3.1.5",
+    "tapable": "^1.1.3"
+  }
+}

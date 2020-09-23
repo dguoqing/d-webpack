@@ -1,12 +1,10 @@
 {
-  "name": "d-p",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "scripts": {},
-  "devDependencies": {
-    "less": "^3.12.2",
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12"
-  }
+	"name": "wp",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"private": true,
+	"workspaces": [
+		"*"
+	]
 }

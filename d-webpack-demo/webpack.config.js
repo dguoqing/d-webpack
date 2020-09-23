@@ -22,5 +22,5 @@ module.exports = {
 			},
 		],
 	},
-	plugins: [new P()],
+	plugins: [],
 };
