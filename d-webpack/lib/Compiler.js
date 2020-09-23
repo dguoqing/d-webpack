@@ -58,6 +58,7 @@ class Compiler {
 			if (test.test(modulePath)) {
 				//这个模块需要对应的loader来处理
 				//loader获取对应的loader函数
+				console.log("PPPPPPPPPPPPPPPPPPPPPPPPPP", use);
 				const normalLoader = () => {
 					let loader = require(use[len--]);
 					source = loader(source);
@@ -152,7 +153,11 @@ class Compiler {
 			//文件路径存在
 			//将模板内容以及数据渲染到输出目录
 			fs.writeFile(main, this.assets[main], (err) => {
-				console.log(err);
+				if (err) {
+					console.log(err);
+					return;
+				}
+				console.log("打包完成");
 			});
 		} else {
 			//文件路径不存在

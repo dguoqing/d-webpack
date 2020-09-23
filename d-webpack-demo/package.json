@@ -7,7 +7,10 @@
 		"build": "d-webpack"
 	},
 	"devDependencies": {
+		"@babel/core": "^7.11.6",
+		"@babel/preset-env": "^7.11.5",
 		"chalk": "^4.1.0",
+		"loader-utils": "^2.0.0",
 		"less": "^3.12.2",
 		"webpack": "^4.44.1",
 		"webpack-cli": "^3.3.12"
